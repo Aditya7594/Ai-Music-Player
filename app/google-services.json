@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1033431512748",
+    "project_id": "musicapp-f3cad",
+    "storage_bucket": "musicapp-f3cad.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1033431512748:android:9fce9f222b2cd908751109",
+        "android_client_info": {
+          "package_name": "com.example.music"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9VX8-5HJsxTdHOjYmXsjyOg1ehFFIpMo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

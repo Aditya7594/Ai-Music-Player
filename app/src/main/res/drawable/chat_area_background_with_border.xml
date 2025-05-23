@@ -1,0 +1,17 @@
+<!-- res/drawable/chat_area_background_with_border.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Border -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" />
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+    <!-- Inner Background -->
+    <item android:top="2dp" android:bottom="2dp" android:left="2dp" android:right="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#1E1E1E" /> <!-- Inner background color -->
+            <corners android:radius="14dp" />
+        </shape>
+    </item>
+</layer-list>

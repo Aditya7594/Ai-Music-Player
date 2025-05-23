@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <!-- Top Profile Button -->
+    <ImageView
+        android:id="@+id/profile_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_profile"
+        android:contentDescription="Profile" />
+
+    <!-- Chat RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/profile_button"
+        android:layout_above="@id/inputContainer"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="8dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+    <!-- Input Container -->
+    <LinearLayout
+        android:id="@+id/inputContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/controller_container"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/input_background">
+
+        <EditText
+            android:id="@+id/input_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="Type a message..."
+            android:textColorHint="#80FFFFFF"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:maxLines="4"/>
+
+        <ImageButton
+            android:id="@+id/send_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_send"
+            android:contentDescription="Send message"/>
+
+    </LinearLayout>
+
+    <!-- Circular Controller Container -->
+    <RelativeLayout
+        android:id="@+id/controller_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp">
+
+        <!-- Time Display -->
+        <TextView
+            android:id="@+id/currentTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:00"
+            android:textColor="@android:color/white"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/totalTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:00"
+            android:textColor="@android:color/white"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_centerVertical="true" />
+
+        <!-- Song Info -->
+        <TextView
+            android:id="@+id/song_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/circular_controller"
+            android:gravity="center"
+            android:text="No song playing"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <!-- Circular Controller -->
+        <RelativeLayout
+            android:id="@+id/circular_controller"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circular_controller_background">
+
+            <!-- Previous Button -->
+            <ImageButton
+                android:id="@+id/btn_previous"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_previous" />
+
+            <!-- Play/Pause Button -->
+            <ImageButton
+                android:id="@+id/btn_play_pause"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_centerInParent="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_play" />
+
+            <!-- Next Button -->
+            <ImageButton
+                android:id="@+id/btn_next"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_next" />
+
+            <!-- Volume Button -->
+            <ImageButton
+                android:id="@+id/btn_volume"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_volume" />
+
+            <!-- Menu Button -->
+            <ImageButton
+                android:id="@+id/btn_menu"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_menu" />
+
+            <!-- Microphone Button -->
+            <ImageButton
+                android:id="@+id/btn_mic"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_mic"
+                android:contentDescription="Voice commands" />
+                
+            <!-- Voice Recognition Circle -->
+            <View
+                android:id="@+id/listening_circle"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="8dp"
+                android:background="@drawable/listening_circle_background"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <!-- Progress Bar -->
+        <SeekBar
+            android:id="@+id/song_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/circular_controller"
+            android:layout_marginTop="8dp" />
+
+    </RelativeLayout>
+
+    <!-- Music Controller -->
+    <include
+        android:id="@+id/musicController"
+        layout="@layout/music_controller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</RelativeLayout>

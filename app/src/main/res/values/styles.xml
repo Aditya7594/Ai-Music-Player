@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DarkDialog" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:background">#1A1A1A</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textColorHint">#80FFFFFF</item>
+        <item name="android:tint">#FFFFFF</item>
+        <item name="queryBackground">@android:color/transparent</item>
+        <item name="searchIcon">@drawable/ic_search</item>
+        <item name="closeIcon">@drawable/ic_close</item>
+    </style>
+
+    <style name="PopupAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+    </style>
+</resources> 

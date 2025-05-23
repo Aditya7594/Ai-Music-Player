@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Music</string>
+    <string name="loading_songs">Loading songs…</string>
+    <string name="error_initializing">Error initializing app</string>
+    <string name="error_loading_songs">Error loading songs</string>
+    <string name="no_songs_found">No songs found</string>
+    <string name="songs_found_format">Found %1$d songs</string>
+    <string name="permission_already_granted">Storage permission already granted</string>
+    <string name="permission_denied">Storage permission denied</string>
+    <string name="permission_error">Error requesting permission</string>
+    <string name="volume_up">Volume up</string>
+    <string name="volume_down">Volume down</string>
+    <string name="now_playing_format">Now Playing: %1$s</string>
+    <string name="default_web_client_id">1033431512748-98duvg5ivpre9kqrbc2sn2l8l8es2klb.apps.googleusercontent.com</string>
+    <string name="gemini_api_key">AIzaSyBq4R1YJA5zWIcRZvHvvQK0gzGTriunDr0</string>
+    
+    <!-- Login & Register -->
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="hint_username">Username</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Register</string>
+    <string name="text_no_account">Don\'t have an account? Register</string>
+    <string name="text_have_account">Already have an account? Login</string>
+    
+    <!-- Profile -->
+    <string name="title_profile">Profile</string>
+    <string name="text_member_since">Member since: %1$s</string>
+    <string name="btn_take_photo">Take Photo</string>
+    <string name="btn_choose_gallery">Choose from Gallery</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="title_add_photo">Add Photo</string>
+    
+    <!-- Music Player -->
+    <string name="btn_previous">Previous</string>
+    <string name="btn_play_pause">Play/Pause</string>
+    <string name="btn_next">Next</string>
+    <string name="msg_no_songs">No songs found on your device</string>
+    <string name="msg_playing">Playing: %1$s</string>
+    <string name="msg_paused">Music paused</string>
+    <string name="msg_resumed">Music resumed</string>
+    
+    <!-- Errors -->
+    <string name="error_login">Login failed</string>
+    <string name="error_register">Registration failed</string>
+    <string name="error_camera">Error opening camera</string>
+    <string name="error_gallery">Error opening gallery</string>
+    <string name="error_save_image">Error saving image</string>
+    <string name="error_load_image">Error loading image</string>
+</resources>

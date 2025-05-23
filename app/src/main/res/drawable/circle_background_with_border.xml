@@ -1,0 +1,15 @@
+<!-- res/drawable/circle_background_with_border.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer Border -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#FFFFFF" />
+        </shape>
+    </item>
+    <!-- Inner Circle -->
+    <item android:top="4dp" android:bottom="4dp" android:left="4dp" android:right="4dp">
+        <shape android:shape="oval">
+            <solid android:color="#1E1E1E" /> <!-- Background color inside the border -->
+        </shape>
+    </item>
+</layer-list>
